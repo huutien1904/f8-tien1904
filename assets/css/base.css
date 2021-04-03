@@ -5,7 +5,7 @@
     --text-color: #333;
     --boder-color: #dbdbdb;
     --start-gold-color:#FFCE3E;
-
+    --header-sort-bar-height:46px;
     --header-heigth:120px;
     --navbar-heigth:34px;
     --header-with-search-heigth:calc(var(--header-heigth) - var(--navbar-heigth));
@@ -14,6 +14,7 @@
 
 *{
     box-sizing: inherit;
+    text-decoration: none;
 }
 
 html {

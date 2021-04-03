@@ -1,79 +1,153 @@
-/* Mobile and Tablet <1024 */ 
+/* Mobile and Tablet <1024 */
 
-@media (max-width: 1023px){
-    :root{
-        --header-heigth:70px;
-        --navbar-heigth:0px;
-    }
+@media (max-width: 1023px) {
+  :root {
+    --header-heigth: 70px;
+    --navbar-heigth: 0px;
+  }
 
-    .hide-on-mobile-tablet{
-           display: none ;
-    }
-    .header{
-        position: fixed;
-        z-index: 10;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-    }
-    .app__container{
-        margin-top: var(--header-heigth);
-    }
-    .header__cart-list{
-        position: fixed;
-        top: var(--header-heigth);
-        width: 100%;
-        padding: 0 calc((100% - 644px) / 2);
-        
-    }
-    .header__cart-list::after{
-        display: none;
-    }
-    .header__cart{
-        width: 80px;
-        text-align: right;
-    }
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .header {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .app__container {
+    margin-top: calc(var(--header-heigth) + var(--header-sort-bar-height));
+  }
+  .header__cart-list {
+    position: fixed;
+    top: var(--header-heigth);
+    width: 100%;
+    padding: 0 calc((100% - 644px) / 2);
+  }
+  .header__cart-list::after {
+    cursor: pointer;
+    right: 60px;
+    top: -58px;
+    position: absolute;
+    content: "";
+    border-width: 29px 25px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    opacity: 0;
+  }
+  .header__sort-bar {
+    display: flex;
+  }
 }
 
 /* Tablet */
 
-@media (min-width:740px) and (max-width:1023px){
-    
-    
-    .hide-on-tablet{
-        display: none;
-    }
-    
+@media (min-width: 740px) and (max-width: 1023px) {
+  .header__cart {
+    width: 80px;
+    text-align: right;
+  }
+  .hide-on-tablet {
+    display: none;
+  }
+  .header {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .app__content {
+    padding-top: 7px;
+}
 }
 
 /* Mobile */
 
-@media(max-width:739px){
-    .hide-on-mobile{
-        display: none;
-    }
-    .header-with-search{
-        justify-content: space-between;
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .header-with-search {
+    justify-content: space-between;
+  }
+  .header__cart,
+  .header__logo {
+    width: unset;
+  }
+  .header__logo-link {
+    display: block;
+    line-height: 0;
+    margin-left: 40px;
+  }
+  .header__search {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 44px;
+    top: var(--header-heigth);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 0 20px;
+    animation: mobileSearchSideIn linear 0.3s;
+    display: none;
+  }
 
+  .header__logo-img {
+    width: 150px;
+  }
+  .header__mobile-search-icon {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 1.1rem;
+
+    padding: 0;
+  }
+  .header__mobile-search {
+    padding: 0 12px;
+  }
+  .header__search-input {
+    font-size: 1.3rem;
+  }
+  .header__search-select-laybel {
+    font-size: 1.4rem;
+  }
+  .header__search-btn {
+    height: 34px;
+    margin-right: -12px;
+  }
+  @keyframes mobileSearchSideIn {
+    from {
+      opacity: 0;
+      top: calc(var(--header-heigth) / 2);
     }
-    .header__cart,  
-    .header__logo{
-        width: unset;
+    to {
+      opacity: 1;
+      top: calc(var(--header-heigth));
     }
-    .header__logo-link{
-        display: block;
-        line-height: 0;
-    }
-    .header__search{
-        position: fixed;
-        /* top: calc; */
-        /* top: calc(var(--header-heigth)/2); */
-        left: 0;
-        right: 0;
-        
-        /* box-shadow: 0 1px 2px rgba; */
-        box-shadow: 0 1px 2px rgba(0 , 0,0,0.05);
-        padding: 0 20px;
-    }
+  }
+  .header__search-history {
+    position: fixed;
+
+    top: 117px;
+    width: 100%;
+  }
+  .home-product__pagination{
+    padding: 0;
+  }
+  .pagination-item {
+    list-style: none;
+    margin: 0 0px;
 }
-
+.pagination-item__link{
+  min-width: 30px;
+  font-size: 1.4rem;
+}
+.app__content{
+  margin: 0 4px;
+}
+.app__content {
+    padding-top: 7px;
+}
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/fonts2/fontawesome-free-5.12.1904/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/javascript/script.js">
 </head>
 <body>
     <div class="app">
@@ -68,7 +69,7 @@
                                     </li>
                                     <li class="header__notify-item">
                                         <a href="" class="header__notify-link header__notify-item--viewed">
-                                            <span><img src="https://cafefcdn.com/thumb_w/650/2018/10/15/photo1539562528371-1539562528371967884234.jpg" alt="" class="header__notify-img"></span>
+                                            <span><img src="./assets/img/logo.html" alt="" class="header__notify-img"></span>
                                             
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Mỹ Phẩm chính hãng  </span>
@@ -124,9 +125,19 @@
 
                 <!-- header with search -->
                 <div class="header-with-search">
+                    <!-- <div class="header__bar-mobile">
+                        <i class="fas fa-bars header__bar-mobile-icon"></i>
+                        
+                    </div>
+                    <ul class="menu__barlist">
+                            <li class="menu__barlist-item"><a href="#">Đăng ký</a></li>
+                            <li class="menu__barlist-item"><a href="#">Đăng nhập</a></li>
+                            <li class="menu__barlist-item"><a href="#">Đăng xuất</a></li>
+                    </ul> -->
                     <label for="mobile-search-checkbox" class="header__mobile-search">
                         <i class="header__mobile-search-icon fas fa-search"></i>
                     </label>
+                    
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg class="header__logo-img" viewBox="0 0 192 65">
@@ -136,7 +147,7 @@
                             </svg>
                         </a>
                     </div>
-
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
                     <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
@@ -270,123 +281,10 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="header__cart-item">
-                                        <img src="./assets/img/havecart.jpg" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
-                                                <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-qnt">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">
-                                                    Phân loại: Bạc
-                                                </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    
+                                    
 
-                                    <li class="header__cart-item">
-                                        <img src="./assets/img/havecart.jpg" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
-                                                <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-qnt">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">
-                                                    Phân loại: Bạc
-                                                </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header__cart-item">
-                                        <img src="./assets/img/havecart.jpg" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
-                                                <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-qnt">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">
-                                                    Phân loại: Bạc
-                                                </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="header__cart-item">
-                                        <img src="./assets/img/havecart.jpg" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
-                                                <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-qnt">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">
-                                                    Phân loại: Bạc
-                                                </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header__cart-item">
-                                        <img src="./assets/img/havecart.jpg" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
-                                                <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-qnt">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">
-                                                    Phân loại: Bạc
-                                                </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="header__cart-item">
-                                        <img src="./assets/img/havecart.jpg" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
-                                                <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-qnt">2</span>
-                                                </div>
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">
-                                                    Phân loại: Bạc
-                                                </span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
+                                   
                                     <li class="header__cart-item">
                                         <img src="./assets/img/havecart.jpg" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
@@ -436,13 +334,27 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item ">
+                    <a href="" class="header__sort-link  header__sort-link--active">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <!-- Container -->
         <div class="app__container">
             <div class="grid wide">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
+                <div class="row app__content">
+                    <div class="col sm-gutter l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                    
@@ -451,19 +363,19 @@
             
                             <ul class="category-list">
                                 <li class="category-item category-item--active">
-                                    <a href="" class="category-item__link">Trang điểm mặt</a>
+                                    <a href="" class="category-item__link">Sneaker NAM</a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link">Trang điểm mắt</a>
+                                    <a href="" class="category-item__link">Sneaker NỮ</a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link">Trang điểm môi</a>
+                                    <a href="" class="category-item__link">Sneaker UNISEX</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
     
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__laybel">Sắp xếp theo</span>
                             <button class="home-filter__btn btn">Phổ biến</button>
@@ -504,13 +416,136 @@
                             </div>
                         </div>
 
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích Dụng cụ và thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Thiết bị điện gia dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Đồ dùng phòng bếp </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Thiết bị điện gia dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Đồ dùng phòng bếp </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Thiết bị điện gia dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Đồ dùng phòng bếp </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Thiết bị điện gia dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Đồ dùng phòng bếp </a>
+                                </li>
+                            </ul>
+                        </nav>
+
                         <div class="home-product">
-                            <div class="grid__row">
+                            <div class="row sm-gutter">
                                 <!-- Product item -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-1/p240x240/91910579_2548591268747007_6950126034121392128_o.jpg?_nc_cat=104&_nc_sid=dbb9e7&_nc_oc=AQkGkl_lZz4bwvReB-IVUiVm4A8yYvwZdiXngadBSKTk1CtKKhpVvBJOg4UTPru-V_0&_nc_ht=scontent.fhan2-4.fna&_nc_tp=6&oh=4bf55336da2de5b36e98e913b638d006&oe=5EE8FC54);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/jd_156841_a-2_68d215aa58364ac89c4853490f7cb553_1024x1024.jpg)"></div>
+                                        <h4 class="home__product-item__name">NIKE AIR FORCE 1 <h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">2.300.000</span>
+                                            <span class="home__product-item__price-curent">999.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">100 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">NIKE</span>
+                                            <span class="home__product-item__origin-name">AMERICA</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/20190823-_DSC02792.jpg);"></div>
+                                        <h4 class="home__product-item__name">Air Max 97<h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">5.534.000đ</span>
+                                            <span class="home__product-item__price-curent">4.000.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">1000 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">NIKE</span>
+                                            <span class="home__product-item__origin-name">AMERICA</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/air-force-1-07-se-shoe-Zvf6pd.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1<h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
@@ -548,10 +583,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/p240x240/74664630_1435127303321769_8959709814234021888_o.jpg?_nc_cat=102&_nc_sid=dbb9e7&_nc_oc=AQkXxDBzbwF-iwgXOKryS9m7u1vF-_NQpdQ9MMpdf_0ReWJymZR1rCbUOYcJHD2sltQ&_nc_ht=scontent.fhan2-1.fna&_nc_tp=6&oh=1531d7c01a3e36a3e6daa3376d2515a5&oe=5EEB43C0);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/nike-air-jordan-1-mid-light-smoke-grey.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1 <h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
@@ -589,10 +624,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent-hkt1-1.xx.fbcdn.net/v/t1.0-1/p240x240/83490279_2497704673835667_1691057421914472448_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_oc=AQkM9aoP9P7NXi27joYaWTibBAe4zqnsABSWTkuY_PDq3n7mSUJOMStw5OGRRRXpH18&_nc_ht=scontent-hkt1-1.xx&_nc_tp=6&oh=08bf9ff8b0cd8be627f31812b72828b4&oe=5EA905B9);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/giay-Air-Jordan-1-Retro-High-Fearless-UNC-Chicago-scaled-e1601531596568.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1 <h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
@@ -630,10 +665,92 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent-hkt1-1.xx.fbcdn.net/v/t1.0-1/p240x240/83490279_2497704673835667_1691057421914472448_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_oc=AQkM9aoP9P7NXi27joYaWTibBAe4zqnsABSWTkuY_PDq3n7mSUJOMStw5OGRRRXpH18&_nc_ht=scontent-hkt1-1.xx&_nc_tp=6&oh=08bf9ff8b0cd8be627f31812b72828b4&oe=5EA905B9);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/jd_156841_a-2_68d215aa58364ac89c4853490f7cb553_1024x1024.jpg)"></div>
+                                        <h4 class="home__product-item__name">NIKE AIR FORCE 1 <h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">2.300.000</span>
+                                            <span class="home__product-item__price-curent">999.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">100 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">NIKE</span>
+                                            <span class="home__product-item__origin-name">AMERICA</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/20190823-_DSC02792.jpg);"></div>
+                                        <h4 class="home__product-item__name">Air Max 97<h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">5.534.000đ</span>
+                                            <span class="home__product-item__price-curent">4.000.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">1000 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">NIKE</span>
+                                            <span class="home__product-item__origin-name">AMERICA</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/air-force-1-07-se-shoe-Zvf6pd.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1<h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
@@ -671,10 +788,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent-hkt1-1.xx.fbcdn.net/v/t1.0-1/p240x240/83490279_2497704673835667_1691057421914472448_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_oc=AQkM9aoP9P7NXi27joYaWTibBAe4zqnsABSWTkuY_PDq3n7mSUJOMStw5OGRRRXpH18&_nc_ht=scontent-hkt1-1.xx&_nc_tp=6&oh=08bf9ff8b0cd8be627f31812b72828b4&oe=5EA905B9);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/nike-air-jordan-1-mid-light-smoke-grey.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1 <h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
@@ -712,10 +829,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent-hkt1-1.xx.fbcdn.net/v/t1.0-1/p240x240/83490279_2497704673835667_1691057421914472448_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_oc=AQkM9aoP9P7NXi27joYaWTibBAe4zqnsABSWTkuY_PDq3n7mSUJOMStw5OGRRRXpH18&_nc_ht=scontent-hkt1-1.xx&_nc_tp=6&oh=08bf9ff8b0cd8be627f31812b72828b4&oe=5EA905B9);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/giay-Air-Jordan-1-Retro-High-Fearless-UNC-Chicago-scaled-e1601531596568.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1 <h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
@@ -753,10 +870,96 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                
+                            </div>
+                            <div class="row sm-gutter">
+                                <!-- Product item -->
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent-hkt1-1.xx.fbcdn.net/v/t1.0-1/p240x240/83490279_2497704673835667_1691057421914472448_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_oc=AQkM9aoP9P7NXi27joYaWTibBAe4zqnsABSWTkuY_PDq3n7mSUJOMStw5OGRRRXpH18&_nc_ht=scontent-hkt1-1.xx&_nc_tp=6&oh=08bf9ff8b0cd8be627f31812b72828b4&oe=5EA905B9);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/jd_156841_a-2_68d215aa58364ac89c4853490f7cb553_1024x1024.jpg)"></div>
+                                        <h4 class="home__product-item__name">NIKE AIR FORCE 1 <h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">2.300.000</span>
+                                            <span class="home__product-item__price-curent">999.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">100 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">NIKE</span>
+                                            <span class="home__product-item__origin-name">AMERICA</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/20190823-_DSC02792.jpg);"></div>
+                                        <h4 class="home__product-item__name">Air Max 97<h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">5.534.000đ</span>
+                                            <span class="home__product-item__price-curent">4.000.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">1000 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">NIKE</span>
+                                            <span class="home__product-item__origin-name">AMERICA</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/air-force-1-07-se-shoe-Zvf6pd.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1<h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
@@ -794,10 +997,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent-hkt1-1.xx.fbcdn.net/v/t1.0-1/p240x240/83490279_2497704673835667_1691057421914472448_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_oc=AQkM9aoP9P7NXi27joYaWTibBAe4zqnsABSWTkuY_PDq3n7mSUJOMStw5OGRRRXpH18&_nc_ht=scontent-hkt1-1.xx&_nc_tp=6&oh=08bf9ff8b0cd8be627f31812b72828b4&oe=5EA905B9);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/nike-air-jordan-1-mid-light-smoke-grey.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1 <h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
@@ -835,10 +1038,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent-hkt1-1.xx.fbcdn.net/v/t1.0-1/p240x240/83490279_2497704673835667_1691057421914472448_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_oc=AQkM9aoP9P7NXi27joYaWTibBAe4zqnsABSWTkuY_PDq3n7mSUJOMStw5OGRRRXpH18&_nc_ht=scontent-hkt1-1.xx&_nc_tp=6&oh=08bf9ff8b0cd8be627f31812b72828b4&oe=5EA905B9);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/giay-Air-Jordan-1-Retro-High-Fearless-UNC-Chicago-scaled-e1601531596568.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1 <h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
@@ -876,10 +1079,174 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <div class="home__product-item">
-                                        <div class="home__product-item__img" style="background-image: url(https://scontent-hkt1-1.xx.fbcdn.net/v/t1.0-1/p240x240/83490279_2497704673835667_1691057421914472448_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_oc=AQkM9aoP9P7NXi27joYaWTibBAe4zqnsABSWTkuY_PDq3n7mSUJOMStw5OGRRRXpH18&_nc_ht=scontent-hkt1-1.xx&_nc_tp=6&oh=08bf9ff8b0cd8be627f31812b72828b4&oe=5EA905B9);"></div>
-                                        <h4 class="home__product-item__name">Set dưỡng trắng Whoo đông y hoàng cung đẹp trai vch quê <h4>
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/jd_156841_a-2_68d215aa58364ac89c4853490f7cb553_1024x1024.jpg)"></div>
+                                        <h4 class="home__product-item__name">NIKE AIR FORCE 1 <h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">2.300.000</span>
+                                            <span class="home__product-item__price-curent">999.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">100 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">NIKE</span>
+                                            <span class="home__product-item__origin-name">AMERICA</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/20190823-_DSC02792.jpg);"></div>
+                                        <h4 class="home__product-item__name">Air Max 97<h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">5.534.000đ</span>
+                                            <span class="home__product-item__price-curent">4.000.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">1000 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">NIKE</span>
+                                            <span class="home__product-item__origin-name">AMERICA</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/air-force-1-07-se-shoe-Zvf6pd.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1<h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">1.200.000đ</span>
+                                            <span class="home__product-item__price-curent">999.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">88 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">Whoo</span>
+                                            <span class="home__product-item__origin-name">Nhật Bản</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/nike-air-jordan-1-mid-light-smoke-grey.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1 <h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">1.200.000đ</span>
+                                            <span class="home__product-item__price-curent">999.000đ</span>
+                                        </div>
+                                        <div class="home__product-item__action">
+                                            <span class="home__product-item__like home__product-item__like--liked">
+                                                <i class="home__product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home__product-item__like-icon-fill fas fa-heart"></i>
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </span>
+
+                                            <div class="home__product-item__rating">
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="home__product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home__product-item__sold">88 đã bán </div>
+                                        </div>
+                                        <div class="home__product-item__origin">
+                                            <span class="home__product-item__brand">Whoo</span>
+                                            <span class="home__product-item__origin-name">Nhật Bản</span>
+                                        </div>
+
+                                        <div class="home__product-item__favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home__product-item__sale-off">
+                                            <span class="home__product-item__sale-off-percent">43%</span>
+                                            <span class="home__product-item__sale-off-label">GIẢM</span>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="home__product-item">
+                                        <div class="home__product-item__img" style="background-image: url(./assets/img/giay-Air-Jordan-1-Retro-High-Fearless-UNC-Chicago-scaled-e1601531596568.jpg);"></div>
+                                        <h4 class="home__product-item__name">jordan 1 <h4>
                                         <div class="home__product-item__price">
                                             <span class="home__product-item__price-old">1.200.000đ</span>
                                             <span class="home__product-item__price-curent">999.000đ</span>
